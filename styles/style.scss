@@ -1,0 +1,472 @@
+// variables
+$primary-color: #37447e;
+$grey900: #141719;
+$grey800: #393e41;
+$grey700: #454e54;
+$grey600: #5d6970;
+$grey500: #76848c;
+$grey400: #939ea4;
+$grey300: #b0b8bc;
+$grey200: #cdd1d4;
+$grey100: #e9ebec;
+$blue900: #091133;
+$blue800: #111b47;
+$blue700: #222f65;
+$blue600: #37447e;
+$blue500: #505f98;
+$blue400: #6f7cb2;
+$blue300: #929ecc;
+$blue200: #bac3e5;
+$blue100: #e7ecff;
+$yellow500: #ffd166;
+$yellow400: #fedc8c;
+$yellow300: #fde7b3;
+$yellow200: #fff2d2;
+$yellow100: #fff6e0;
+$white: #ffffff;
+$lightGrey: #fbfbfd;
+$black: #000000;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+// fonts
+$font-main: "Roboto", sans-serif;
+@mixin font1 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: $blue500;
+}
+
+@mixin primary-button {
+  font-family: $font-main;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height, or 150% */
+
+  text-align: center;
+
+  /* Colour/Secondary/White 100 (general) */
+
+  color: $white;
+
+  background: $blue800;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+}
+
+@mixin sub-button {
+  font-family: $font-main;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height, or 150% */
+
+  text-align: center;
+
+  /* Colour/Secondary/White 100 (general) */
+
+  color: $blue900;
+
+  background: transparent;
+  border-radius: 2px;
+  border: 2px solid $blue900;
+  cursor: pointer;
+}
+
+@mixin medium50 {
+  font-family: $font-main;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 66px;
+  /* or 132% */
+
+  letter-spacing: 1px;
+
+  /* Colour/Main/Blue/900 */
+
+  color: $blue900;
+}
+
+@mixin medium36 {
+  font-family: $font-main;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 48px;
+  /* identical to box height, or 133% */
+
+  /* Colour/Main/Blue/900 */
+
+  color: $blue900;
+}
+@mixin medium16 {
+  font-family: $font-main;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+
+  /* Colour/Main/Blue/900 */
+
+  color: $blue900;
+}
+
+@mixin medium14 {
+  font-family: $font-main;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+
+  /* Colour/Main/Grey/400 */
+
+  color: $grey400;
+}
+@mixin regular18 {
+  font-family: $font-main;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
+
+  /* Colour/Main/Blue/500 */
+
+  color: $blue500;
+}
+
+@mixin regular16 {
+  font-family: $font-main;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+
+  /* Colour/Main/Blue/400 */
+
+  color: $blue400;
+}
+
+@mixin regular14 {
+  font-family: $font-main;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+
+  text-align: center;
+
+  /* Colour/Main/Grey/600 */
+
+  color: $grey600;
+}
+@mixin regular12 {
+  font-family: $font-main;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  /* or 150% */
+
+  /* Colour/Main/Grey/600 */
+
+  color: $grey600;
+}
+//
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: url("../images/designer_1.png");
+  background-position: right 0% top 0%;
+  background-repeat: no-repeat;
+}
+
+.nav {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  &__menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    &__item {
+      margin-left: 60px;
+    }
+    &__item:nth-child(1) {
+      margin-left: 0;
+    }
+    &__item > a {
+      @include font1();
+      text-decoration: none;
+    }
+  }
+  &__logo {
+    font-family: $font-main;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 38px;
+    /* identical to box height, or 146% */
+
+    /* Colour/Logo/Primary */
+
+    color: $primary-color;
+  }
+  &__button {
+    width: 160px;
+    height: 26px;
+    @include primary-button();
+  }
+}
+
+// j
+.jumbotron {
+  margin-top: 240px;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 386px;
+  &__textBlock {
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+    &__title {
+      @include medium50();
+    }
+    &__description {
+      margin-top: 20px;
+      @include regular18();
+    }
+    &__description > p:nth-child(1) {
+      margin-bottom: 20px;
+    }
+    &__buttonBlock {
+      display: flex;
+      flex-direction: row;
+      margin-top: 70px;
+    }
+    &__primaryButton {
+      @include primary-button();
+      height: 36px;
+      width: 189px;
+    }
+    &__subButton {
+      margin-left: 30px;
+      @include sub-button();
+      height: 36px;
+      width: 189px;
+    }
+  }
+
+  &__image {
+    background-image: url("../images/designer_1.png");
+  }
+}
+
+//
+.loginMobBlock {
+  padding: 160px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  &__textBlock {
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    &__title {
+      @include medium36();
+    }
+    &__description {
+      margin-top: 16px;
+      @include regular16();
+    }
+    &__description > p:nth-child(1) {
+      margin-bottom: 16px;
+    }
+    &__blocks {
+      margin-top: 80px;
+      display: flex;
+      flex-direction: row;
+      &__item {
+        display: flex;
+        flex-direction: column;
+        height: 138px;
+        width: 255px;
+        &__icon {
+          width: 36px;
+          height: 36px;
+        }
+        &__title {
+          @include medium16();
+          margin-top: 14px;
+        }
+        &__description {
+          margin-top: 6px;
+          @include regular12();
+        }
+      }
+    }
+  }
+
+  &__imageBlock {
+    height: 524.3134155273438px;
+    width: 540px;
+    background-image: url("../images/undraw_mobile_login_ikmv.png");
+    margin-left: 30px;
+  }
+}
+
+//
+.blockInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 130px 0;
+  &__image {
+    margin-right: 155px;
+  }
+  &__text {
+    width: 445px;
+    &__title {
+      @include medium36();
+    }
+    &__description {
+      margin-top: 16px;
+      @include regular16();
+    }
+    &__description > p:nth-child(1) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+//
+.priceContainer {
+  background: $blue100;
+}
+
+.priceBlock {
+  width: 600px;
+  margin: 0 auto;
+  padding: 240px 0 170px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    @include medium36();
+  }
+  &__description {
+    margin-top: 16px;
+    @include regular16();
+    text-align: center;
+  }
+  &__price {
+    margin-top: 35px;
+    @include medium50();
+  }
+  &__subtitle {
+    @include regular16();
+  }
+  &__body {
+    margin-top: 60px;
+    @include regular14();
+  }
+  &__button {
+    margin-top: 9px;
+    @include primary-button();
+    height: 31px;
+    width: 189px;
+  }
+}
+
+footer {
+  background: #e7ecff;
+  padding: 68px 0 32px;
+}
+
+.footerBlock {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footerMain {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid #cdd1d4;
+  padding-bottom: 47px;
+  align-items: center;
+  &__copyright {
+    @include medium14();
+  }
+  &__button {
+    @include primary-button();
+    height: 26px;
+    width: 109px;
+  }
+}
+
+.footerSub {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__nav {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+
+    &__item {
+      margin-left: 60px;
+    }
+    &__item:nth-child(1) {
+      margin-left: 0;
+    }
+    &__item > a {
+      text-decoration: none;
+      @include regular14();
+    }
+  }
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  &__item {
+    margin-left: 30px;
+  }
+  &__item:nth-child(1) {
+    margin-left: 0;
+  }
+  &__item > a {
+    text-decoration: none;
+  }
+}

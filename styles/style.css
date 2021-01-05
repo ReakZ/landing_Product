@@ -1,0 +1,594 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: url("../images/designer_1.png");
+  background-position: right 0% top 0%;
+  background-repeat: no-repeat;
+}
+
+.nav {
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__menu {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.nav__menu__item {
+  margin-left: 60px;
+}
+
+.nav__menu__item:nth-child(1) {
+  margin-left: 0;
+}
+
+.nav__menu__item > a {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #505f98;
+  text-decoration: none;
+}
+
+.nav__logo {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 38px;
+  /* identical to box height, or 146% */
+  /* Colour/Logo/Primary */
+  color: #37447e;
+}
+
+.nav__button {
+  width: 160px;
+  height: 26px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height, or 150% */
+  text-align: center;
+  /* Colour/Secondary/White 100 (general) */
+  color: #ffffff;
+  background: #111b47;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+}
+
+.jumbotron {
+  margin-top: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-bottom: 386px;
+}
+
+.jumbotron__textBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 540px;
+}
+
+.jumbotron__textBlock__title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 66px;
+  /* or 132% */
+  letter-spacing: 1px;
+  /* Colour/Main/Blue/900 */
+  color: #091133;
+}
+
+.jumbotron__textBlock__description {
+  margin-top: 20px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
+  /* Colour/Main/Blue/500 */
+  color: #505f98;
+}
+
+.jumbotron__textBlock__description > p:nth-child(1) {
+  margin-bottom: 20px;
+}
+
+.jumbotron__textBlock__buttonBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 70px;
+}
+
+.jumbotron__textBlock__primaryButton {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height, or 150% */
+  text-align: center;
+  /* Colour/Secondary/White 100 (general) */
+  color: #ffffff;
+  background: #111b47;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  height: 36px;
+  width: 189px;
+}
+
+.jumbotron__textBlock__subButton {
+  margin-left: 30px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height, or 150% */
+  text-align: center;
+  /* Colour/Secondary/White 100 (general) */
+  color: #091133;
+  background: transparent;
+  border-radius: 2px;
+  border: 2px solid #091133;
+  cursor: pointer;
+  height: 36px;
+  width: 189px;
+}
+
+.jumbotron__image {
+  background-image: url("../images/designer_1.png");
+}
+
+.loginMobBlock {
+  padding: 160px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loginMobBlock__textBlock {
+  width: 540px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.loginMobBlock__textBlock__title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 48px;
+  /* identical to box height, or 133% */
+  /* Colour/Main/Blue/900 */
+  color: #091133;
+}
+
+.loginMobBlock__textBlock__description {
+  margin-top: 16px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+  /* Colour/Main/Blue/400 */
+  color: #6f7cb2;
+}
+
+.loginMobBlock__textBlock__description > p:nth-child(1) {
+  margin-bottom: 16px;
+}
+
+.loginMobBlock__textBlock__blocks {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.loginMobBlock__textBlock__blocks__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 138px;
+  width: 255px;
+}
+
+.loginMobBlock__textBlock__blocks__item__icon {
+  width: 36px;
+  height: 36px;
+}
+
+.loginMobBlock__textBlock__blocks__item__title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+  /* Colour/Main/Blue/900 */
+  color: #091133;
+  margin-top: 14px;
+}
+
+.loginMobBlock__textBlock__blocks__item__description {
+  margin-top: 6px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  /* or 150% */
+  /* Colour/Main/Grey/600 */
+  color: #5d6970;
+}
+
+.loginMobBlock__imageBlock {
+  height: 524.3134155273438px;
+  width: 540px;
+  background-image: url("../images/undraw_mobile_login_ikmv.png");
+  margin-left: 30px;
+}
+
+.blockInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 130px 0;
+}
+
+.blockInfo__image {
+  margin-right: 155px;
+}
+
+.blockInfo__text {
+  width: 445px;
+}
+
+.blockInfo__text__title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 48px;
+  /* identical to box height, or 133% */
+  /* Colour/Main/Blue/900 */
+  color: #091133;
+}
+
+.blockInfo__text__description {
+  margin-top: 16px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+  /* Colour/Main/Blue/400 */
+  color: #6f7cb2;
+}
+
+.blockInfo__text__description > p:nth-child(1) {
+  margin-bottom: 20px;
+}
+
+.priceContainer {
+  background: #e7ecff;
+}
+
+.priceBlock {
+  width: 600px;
+  margin: 0 auto;
+  padding: 240px 0 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.priceBlock__title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 48px;
+  /* identical to box height, or 133% */
+  /* Colour/Main/Blue/900 */
+  color: #091133;
+}
+
+.priceBlock__description {
+  margin-top: 16px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+  /* Colour/Main/Blue/400 */
+  color: #6f7cb2;
+  text-align: center;
+}
+
+.priceBlock__price {
+  margin-top: 35px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 66px;
+  /* or 132% */
+  letter-spacing: 1px;
+  /* Colour/Main/Blue/900 */
+  color: #091133;
+}
+
+.priceBlock__subtitle {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+  /* Colour/Main/Blue/400 */
+  color: #6f7cb2;
+}
+
+.priceBlock__body {
+  margin-top: 60px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+  text-align: center;
+  /* Colour/Main/Grey/600 */
+  color: #5d6970;
+}
+
+.priceBlock__button {
+  margin-top: 9px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height, or 150% */
+  text-align: center;
+  /* Colour/Secondary/White 100 (general) */
+  color: #ffffff;
+  background: #111b47;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  height: 31px;
+  width: 189px;
+}
+
+footer {
+  background: #e7ecff;
+  padding: 68px 0 32px;
+}
+
+.footerBlock {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footerMain {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-bottom: 2px solid #cdd1d4;
+  padding-bottom: 47px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footerMain__copyright {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+  /* Colour/Main/Grey/400 */
+  color: #939ea4;
+}
+
+.footerMain__button {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height, or 150% */
+  text-align: center;
+  /* Colour/Secondary/White 100 (general) */
+  color: #ffffff;
+  background: #111b47;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  height: 26px;
+  width: 109px;
+}
+
+.footerSub {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footerSub__nav {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footerSub__nav__item {
+  margin-left: 60px;
+}
+
+.footerSub__nav__item:nth-child(1) {
+  margin-left: 0;
+}
+
+.footerSub__nav__item > a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+  text-align: center;
+  /* Colour/Main/Grey/600 */
+  color: #5d6970;
+}
+
+.socials {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.socials__item {
+  margin-left: 30px;
+}
+
+.socials__item:nth-child(1) {
+  margin-left: 0;
+}
+
+.socials__item > a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
